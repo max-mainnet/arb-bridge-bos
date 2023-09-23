@@ -23,10 +23,17 @@
 #### Action Components
 
 - gen-claim-action.jsx
+
   - check withdraw status and generate claim action
+
 - get-balance.jsx
+
   - get balance for ETH and ERC20 tokens
+
 - get-l1-token-gateway.jsx
+
   - get ERC20 tokens gateway address.
+
 - transfer-action.jsx
+
   - contains basic actions (deposit ETH, deposit ERC20, withdraw ETH, withdraw ERC20)
