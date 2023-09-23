@@ -1,32 +1,8 @@
-const { config, sender } = props;
-
-const l2NodeUrl = "https://arb1.arbitrum.io/rpc";
-
-const l1NodeUrl = "https://rpc.ankr.com/eth";
-
-const l2Provider = new ethers.providers.JsonRpcProvider(l2NodeUrl);
-
-const l1Provider = new ethers.providers.JsonRpcProvider(l1NodeUrl);
+const { config, sender, chainId } = props;
 
 State.init({
   pendingList: [],
 });
-
-if (!state.l1BlockNumber) {
-  l1Provider.getBlockNumber().then((blockNumber) => {
-    State.update({
-      l1BlockNumber: blockNumber,
-    });
-  });
-}
-
-if (!state.l2BlockNumber) {
-  l2Provider.getBlockNumber().then((blockNumber) => {
-    State.update({
-      l2BlockNumber: blockNumber,
-    });
-  });
-}
 
 const pendingList = Storage.get(
   "arb-bridge-pending-list-withdraw",
@@ -64,6 +40,7 @@ return (
             ...props,
             item,
             config,
+            chainId,
           }}
         />
       ))}
