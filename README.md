@@ -20,7 +20,7 @@
 
   - button component to trigger actions
 
-#### Action Components
+#### function Components
 
 - gen-claim-action.jsx
 
