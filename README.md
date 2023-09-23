@@ -32,7 +32,7 @@
 
 - get-l1-token-gateway.jsx
 
-  - get ERC20 tokens gateway address.
+  - get ERC20 tokens gateway address
 
 - transfer-action.jsx
 
