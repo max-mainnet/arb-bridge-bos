@@ -94,6 +94,7 @@ State.init({
   amount: "",
   balance: "",
 });
+
 const config = {
   tokens: tokens,
   eth: ETH,
