@@ -10,7 +10,7 @@
 
 - PendingWithdrawItem.jsx
 
-  - we will claim the withdraw here
+  - we will claim the pending withdraw here
 
 - TokenItem.jsx
 
@@ -27,6 +27,6 @@
 - get-balance.jsx
   - get balance for ETH and ERC20 tokens
 - get-l1-token-gateway.jsx
-  - Get ERC20 tokens gateway address
+  - get ERC20 tokens gateway address.
 - transfer-action.jsx
   - contains basic actions (deposit ETH, deposit ERC20, withdraw ETH, withdraw ERC20)
